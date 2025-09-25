@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: arial;
+    background: linear-gradient(135deg,#eb8807,#eb8807);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+    background: rgba(0, 0, 0,0.2);
+}
+.logo{
+    color: #fff;
+}
+.nav-list{
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+.nav-list a{
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+.main{
+    flex: 1;
+    display: flex;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+.form-container{
+    background: #fff;
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    border-radius: 12px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+input{
+    padding: 0.4rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+.btn{
+    background: #eb8807;
+    border: none;
+    padding: 0.6rem;
+    border-radius: 12px;
+    transition: 0.5s;
+}
+.btn:hover{
+    cursor: pointer;
+    background: #e5e7e9;
+}
+
+.footer{
+    text-align: center;
+    padding: 1rem;
+    background: rgba(0, 0, 0,0.2);
+}
+@media (max-width:600px){
+    .header{
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .form-container{
+        padding: 1.5rem;
+    }
+}
+/*-------------------------------------------------*/
+.main1{
+    flex: 1;
+    display: grid;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.intro, .projects, .photo{
+    background: #fff;
+    border-radius: 12px;
+    padding: 2rem;
+}
+.projects .project{
+    margin-top: 1rem;
+    padding: 1rem;
+    background: #cecdcd;
+    border-radius: 8px;
+    border-left: 4px solid #00f2fe;
+}
+.photo{
+    justify-content: center;
+    display: flex;
+}
+
+.photo img{
+    width: 100%;
+    max-width: 300px;
+    border-radius: 12px;
+    transition: 0.5s;
+}
+
+.photo img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
